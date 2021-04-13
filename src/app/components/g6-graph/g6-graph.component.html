@@ -1,0 +1,11 @@
+<div class="body">
+    <div id="container"></div>
+    <div class="suspension_box" [style]="{right: susWidth + 'px'}">
+        <nz-card [style]="{ width: '300px' }" [nzTitle]="node?.name" [nzExtra]="extraTemplate">
+            <p>我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容</p>
+        </nz-card>
+        <ng-template #extraTemplate>
+            <a (click)="createCustomButtonModal()">更多</a>
+        </ng-template>
+    </div>
+</div>
